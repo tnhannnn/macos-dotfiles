@@ -6,4 +6,6 @@ background-opacity = 0.8
 background-blur-radius = 20 
 window-padding-x = 0
 window-padding-y = 0
-
+window-width = 133
+window-height = 43
+confirm-close-surface = false

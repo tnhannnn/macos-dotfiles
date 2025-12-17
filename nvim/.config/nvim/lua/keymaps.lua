@@ -8,8 +8,6 @@ map({ "n", "t" }, "<C-l>", [[<C-\><C-n><C-w>l]], { noremap = true, silent = true
 --Several minor things
 map("v", "<C-c>", '"+y', { desc = "Copy to system clipboard" })
 map("n", "<C-c>", '"+yy', { desc = "Copy line to system clipboard" })
-map("n", "<leader>f", ":find ", { desc = "Find file" })
-map("n", "<leader>n", ":nohlsearch<CR>", { desc = "Clear search highlight" })
 vim.g.mapleader = " "
 -- Compile & run C++ file
 vim.keymap.set("n", "<leader>bc", function()
@@ -40,3 +38,4 @@ vim.api.nvim_create_autocmd("TermOpen", {
 })
 -- Exit terminal mode by pressing <Esc>
 map("t", "<Esc>", [[<C-\><C-n>]], { noremap = true, silent = true })
+map("n", "<Esc>", "<cmd>noh<CR><Esc>", { silent = true })
